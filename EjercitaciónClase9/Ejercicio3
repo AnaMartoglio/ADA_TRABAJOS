@@ -1,0 +1,32 @@
+//Ejercicio 3: 
+//Declara dos variables booleanas condicion1 y condicion2. Pide al 
+//usuario que ingrese dos valores booleanos (true o false) y muestra el 
+//resultado de diversas combinaciones lógicas.
+
+
+
+const prompt = require("prompt-sync")({ sigin: true });
+
+let condicion1 = JSON.parse(prompt("Introduce el valor de la condición 1 (true o false): "));
+let condicion2 = JSON.parse(prompt("Introduce el valor de la condición 2 (true o false): "));
+
+let dia = prompt("Responde: ¿qué día es hoy?:");
+let clima = prompt("Responde: ¿Está por llover o está soleado?:");
+
+if (dia.toLowerCase() === "jueves" && condicion1 === true) {
+  console.log("Hoy es jueves.");
+} else if (dia.toLowerCase() === "lunes" && condicion1 === false) {
+  console.log("Hoy no es jueves, sino lunes.");
+} else {
+  console.log("No se cumple ninguna de las condiciones.");
+}
+
+if (clima.toLowerCase() === "soleado" && condicion1 === true) {
+  console.log("Hoy está hermoso.");
+} else if (clima.toLowerCase() === "lluvioso" && condicion1 === false) {
+  console.log("Hoy está re feo.");
+} else {
+  console.log("No se cumple ninguna de las condiciones.");
+}
+
+

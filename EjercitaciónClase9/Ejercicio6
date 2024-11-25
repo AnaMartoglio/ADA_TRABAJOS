@@ -1,0 +1,13 @@
+//Ejercicio 6:  
+//Pide al usuario que ingrese su edad y verifica si es mayor o menor de 
+//edad. Muestra un mensaje personalizado según el caso. 
+
+const prompt = require("prompt-sync")({ sigint: true });
+
+let edad = parseFloat(prompt("Ingresa tu edad: "));
+
+if (edad < 21){
+  console.log("Eres menor de edad para poder realizar este trámite.")
+} else {
+  console.log("Tu edad te permite seguir los siguientes pasos del trámite.")
+}

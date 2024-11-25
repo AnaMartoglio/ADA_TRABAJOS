@@ -1,0 +1,18 @@
+//Ejercicio 2:  
+//Define dos constantes, RANGO_MINIMO y RANGO_MAXIMO, con 
+//valores numéricos de tu elección. Pide al usuario que ingrese un 
+//número y verifica si está dentro del rango definido por las constantes. 
+
+const prompt = require("prompt-sync")({ sigint: true });
+const RANGO_MAXIMO = 25;
+const RANGO_MINIMO = 10;
+
+let numero = parseFloat(prompt("Ingrese un número:"));
+
+if (numero <= RANGO_MAXIMO){
+  console.log("El número que ingresó está dentro del rago Máximo permitido.");
+} else if  (numero <= RANGO_MINIMO){
+  console.log("El número que ingresó está dentro del rango mínimo permitido.");
+} else{
+  console.log("El número que ingresó está fuera de los rangos permitidos.")
+}

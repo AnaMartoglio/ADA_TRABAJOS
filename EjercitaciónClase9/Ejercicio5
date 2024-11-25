@@ -1,0 +1,19 @@
+//Ejercicio 5: 
+//Escribe un programa que pida al usuario que ingrese tres números y 
+//determine cuál es el mayor de los tres. 
+
+const prompt = require("prompt-sync")({ sigint: true });
+
+let numero1= parseFloat(prompt("Ingresa un número: "));
+let numero2 = parseInt(prompt("Ingresa otro número: "));
+let numero3 = parseInt(prompt("Ingresa el último número: "));
+
+if (numero1 > numero2 && numero1 > numero3){
+  console.log("Este número es el más mayor de los tres números que ingresaste: " + numero1);
+} else if (numero2 > numero1 && numero2 > numero3){
+  console.log("Este número es el mejor: " + numero2);
+} else if (numero3 > numero2 && numero3 > numero1) {
+  console.log("El número último que ingresaste es el más mejor y mayor: " + numero3);
+} else {
+  console.log("Ninguno de los número ingresados es el mayor");
+}
